@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Celtic;
+    src: url('/fonts/Celtic.ttf');
+}
+
+.celtic-font {
+    font-family: Celtic, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
