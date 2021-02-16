@@ -31,7 +31,7 @@ jobs:
         run: composer install --prefer-dist --no-interaction --no-suggest
 
       - name: Copy example env file
-        run: cp .env.ci .env
+        run: cp .env.example .env
 
       - name: Generate App Key
         run: php artisan key:generate
