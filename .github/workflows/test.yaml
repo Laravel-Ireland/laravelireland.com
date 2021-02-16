@@ -43,3 +43,7 @@ jobs:
           DB_PORT: 33306
           DB_USER: root
         run: vendor/bin/phpunit --verbose
+
+      - name: Deploy
+          if: github.ref == 'refs/heads/master'
+          run: curl ${{ secrets.FORGE_HOOK }}
