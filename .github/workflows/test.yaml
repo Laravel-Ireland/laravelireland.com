@@ -36,7 +36,7 @@ jobs:
       - name: Generate App Key
         run: php artisan key:generate
 
-      - name: Execute API tests
+      - name: Execute App Tests
         env:
           DB_CONNECTION: mysql
           DB_DATABASE: laravelireland_test
